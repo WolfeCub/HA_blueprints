@@ -1179,7 +1179,7 @@ action:
                         - "{{('snapshot' in attachment and update_thumbnail) or video|length > 0}}"
                       sequence:
                         - delay:
-                            seconds: 5
+                            seconds: 10
                         - variables:
                             new_snapshot: "{{update_thumbnail}}"
                 - alias: "Debug: write to Log"
